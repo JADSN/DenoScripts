@@ -3,7 +3,8 @@ import { FILENAME, obtainAllRadioMessageFromFile } from "../radioMessage.ts";
 
 const router = Router();
 
-// console.log(await obtainAllRadioMessageFromFile(FILENAME));
+// * DEBUG
+await obtainAllRadioMessageFromFile(FILENAME);
 
 // GET home page.
 router.get("/", async (req, res, next) => {

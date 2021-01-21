@@ -29,7 +29,7 @@
       <tbody>
         <% radioMessages.forEach(function(radioMessage) { %>
           <tr>
-            <td><%= radioMessage.datetime %> </td>
+            <td><%= radioMessage.datetime.toISOString() %> </td>
             <td><%= radioMessage.dB %> </td>
             <td><%= radioMessage.direction %> </td>
             <td><%= radioMessage.protocol %> </td>
