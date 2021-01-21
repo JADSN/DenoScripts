@@ -1,0 +1,15 @@
+html {
+    color: black;
+}
+
+.uk-table th {
+    color: black;
+    font-weight: bolder;
+}
+
+.uk-table caption {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
