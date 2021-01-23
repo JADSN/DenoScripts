@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/uikit.min.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="/js/uikit.min.js"></script> 
+    <script src="/js/uikit-icons.min.js"></script> 
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+  </head>
+  <body>
+    <table class="uk-table uk-table-small uk-table-striped uk-table-middle">
+      <caption>RADIO MESSAGES</caption>
+      <thead>
+        <tr>
+          <th class="uk-table-shrink">Datetime</th>
+          <th class="uk-table-shrink">dB</th>
+          <th class="uk-table-shrink">Direction</th>
+          <th class="uk-table-shrink">Protocol</th>
+          <th class="uk-table-shrink">Signal</th>
+          <th class="uk-table-shrink">Clockoffset</th>
+          <th class="uk-table-shrink">FrequencyHz</th>
+          <th class="uk-table-shrink">Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% radioMessages.forEach(function(radioMessage) { %>
+          <tr>
+            <td><%= radioMessage.datetime %> </td>
+            <td><%= radioMessage.decibels %> </td>
+            <td><%= radioMessage.direction %> </td>
+            <td><%= radioMessage.protocol %> </td>
+            <td><%= radioMessage.signal %> </td>
+            <td><%= radioMessage.clockoffset %> </td>
+            <td><%= radioMessage.frequencyHz %> </td>
+            <td><%= radioMessage.message %> </td>
+          </tr>
+        <% }); %>
+        
+
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table>
+  </body>
+</html>
