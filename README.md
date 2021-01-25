@@ -1,2 +1,2 @@
 # DenoScripts
-Deno coes
+Deno codes
