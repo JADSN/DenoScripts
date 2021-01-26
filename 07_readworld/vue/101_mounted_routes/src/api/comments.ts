@@ -49,3 +49,15 @@ export function addCommentsToAnArticle(
     },
   });
 }
+
+// * Delete Comment
+export function deleteComment(
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) {
+  debug(req.originalUrl);
+
+  res.setStatus(200);
+  res.json({ "status": "DELETED" });
+}

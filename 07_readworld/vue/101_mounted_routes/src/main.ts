@@ -6,6 +6,8 @@
 // TODO: Delete Article
 // Format JSON
 
+// TODO: Un/Follow User
+
 import {
   addCommentsToAnArticle,
   authSignIn,
@@ -13,7 +15,10 @@ import {
   createArticle,
   debug,
   deleteArticle,
+  deleteComment,
   error,
+  favoriteArticle,
+  feedArticles,
   getCommentsFromArticle,
   getCurrentUser,
   getListofArticles,
@@ -28,6 +33,7 @@ import {
   tags,
   trace,
   updateArticle,
+  updateUser,
   warn,
 } from "./deps.ts";
 
@@ -67,20 +73,28 @@ app.put("/api/articles/:slug", updateArticle);
 // * Delete Article
 app.delete("/api/articles/:slug", deleteArticle);
 
+// * Favorite Article
+app.post("/api/articles/:slug/favorite", favoriteArticle);
+
+// * Feed Articles
+app.get("/api/articles/feed", feedArticles);
+
 // * Get Profile
 app.get("/api/profiles/:username", getProfile);
 
 // * Get Current User
 app.get("/api/user", getCurrentUser);
 
+// * Update User
+app.put("/api/user", updateUser);
+
 // * Authentication - SignUp(Login)
 app.post("/api/users", authSignUp);
 
 // * Authentication - SignIn(Login)
 app.post("/api/users/login", authSignIn);
-
 app.listen(3000);
 
-// TODO: Delete Comment - comments.ts
+// TODO: Make interface json types
 
 debug("Listening opine at port: 3000");

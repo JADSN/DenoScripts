@@ -20,6 +20,26 @@ export function getCurrentUser(
   });
 }
 
+// * Get Current User
+export function updateUser(
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) {
+  debug(req.originalUrl);
+
+  res.setStatus(200);
+  res.json({
+    "user": {
+      "email": "jake@jake.jake",
+      "token": "jwt.token.here",
+      "username": "jake",
+      "bio": "I work at statefarm",
+      "image": null,
+    },
+  });
+}
+
 // * Authentication - SignIn(Login)
 export function authSignIn(req: Request, res: Response, next: NextFunction) {
   debug(req.originalUrl);

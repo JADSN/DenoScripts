@@ -13,8 +13,17 @@ export { createArticle } from "./articles.ts";
 // * Update Article
 export { updateArticle } from "./articles.ts";
 
-// * Delete Article
+// * Update Article
 export { deleteArticle } from "./articles.ts";
+
+// * Favorite Article
+export { favoriteArticle } from "./articles.ts";
+
+// * Feed Article
+export { feedArticles } from "./articles.ts";
+
+// * Delete Comment
+export { deleteComment } from "./comments.ts";
 
 // * Get Comments from an Article
 export { getCommentsFromArticle } from "./comments.ts";
@@ -27,6 +36,9 @@ export { getProfile } from "./profile.ts";
 
 // * Get Current User
 export { getCurrentUser } from "./user.ts";
+
+// * Update User
+export { updateUser } from "./user.ts";
 
 // * Authentication - SignIn(Login)
 export { authSignIn } from "./user.ts";

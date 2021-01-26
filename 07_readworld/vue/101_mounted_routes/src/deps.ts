@@ -22,11 +22,20 @@ export { updateArticle } from "./api/mod.ts";
 // * Delete Article
 export { deleteArticle } from "./api/mod.ts";
 
+// * Favorite Article
+export { favoriteArticle } from "./api/mod.ts";
+
+// * Feed Article
+export { feedArticles } from "./api/mod.ts";
+
 // * Get Comments from an Article
 export { getCommentsFromArticle } from "./api/mod.ts";
 
 // * Add Comments to an Article
 export { addCommentsToAnArticle } from "./api/mod.ts";
+
+// * Delete Comment
+export { deleteComment } from "./api/mod.ts";
 
 // * Get Profile
 export { getProfile } from "./api/mod.ts";
@@ -34,13 +43,30 @@ export { getProfile } from "./api/mod.ts";
 // * Get Current User
 export { getCurrentUser } from "./api/mod.ts";
 
+// * Update User
+export { updateUser } from "./api/mod.ts";
+
 // * Authentication - SignIn(Login)
 export { authSignIn } from "./api/mod.ts";
 
 // * Authentication - SignUp(Registration)
 export { authSignUp } from "./api/mod.ts";
 
+// * TYPES
+export type {
+  Article,
+  Author,
+  Comment,
+  Profile,
+  Tag,
+  UserAuth,
+  UserLogin,
+  UserRegistration,
+} from "./types.ts";
+
 // * LIBS
+
+// * Opine
 export type {
   NextFunction,
   Request,
