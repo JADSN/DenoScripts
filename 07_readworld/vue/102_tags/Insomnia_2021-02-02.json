@@ -1,0 +1,73 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-02-02T18:20:21.168Z",
+    "__export_source": "insomnia.desktop.app:v2020.5.2",
+    "resources": [
+        {
+            "_id": "req_fd96679ac8ea435583a037b7967f8e99",
+            "parentId": "wrk_a8245b4e107543f1ab2247d1f4bdc8d3",
+            "modified": 1612289821962,
+            "created": 1612289808523,
+            "url": "http://localhost:3000/api/tags",
+            "name": "/api/tags",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1612289808523,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_a8245b4e107543f1ab2247d1f4bdc8d3",
+            "parentId": null,
+            "modified": 1612289800839,
+            "created": 1612289800839,
+            "name": "VueDenoTsRealWorld",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "env_3b6cb7765b0a5096e4814904ce6b1ac94abfbff2",
+            "parentId": "wrk_a8245b4e107543f1ab2247d1f4bdc8d3",
+            "modified": 1612289800935,
+            "created": 1612289800935,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1612289800936,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_3b6cb7765b0a5096e4814904ce6b1ac94abfbff2",
+            "parentId": "wrk_a8245b4e107543f1ab2247d1f4bdc8d3",
+            "modified": 1612289800939,
+            "created": 1612289800939,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_977a0e16f28943b2b3023576aefd44c6",
+            "parentId": "wrk_a8245b4e107543f1ab2247d1f4bdc8d3",
+            "modified": 1612289800863,
+            "created": 1612289800863,
+            "fileName": "VueDenoTsRealWorld",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}

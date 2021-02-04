@@ -2,10 +2,8 @@ import {
   debug,
   error,
   info,
-  LOG_LEVEL,
-  LogLevel,
   trace,
   warn,
-} from "./deps.ts";
+} from "./utils.ts";
 
 debug("IT WORKS");
