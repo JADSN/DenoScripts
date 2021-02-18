@@ -1,0 +1,14 @@
+Frame 6: 170 bytes on wire (1360 bits), 170 bytes captured (1360 bits) on interface lo, id 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 49722, Dst Port: 8000, Seq: 1, Ack: 1, Len: 104
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+    accept: */*\r\n
+    user-agent: Deno/1.7.4\r\n
+    accept-encoding: gzip, br\r\n
+    host: localhost:8000\r\n
+    \r\n
+    [Full request URI: http://localhost:8000/]
+    [HTTP request 1/1]
+    [Response in frame: 11]

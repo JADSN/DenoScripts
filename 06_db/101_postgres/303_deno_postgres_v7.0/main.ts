@@ -6,7 +6,7 @@ const POOL_CONNECTIONS = 1;
 const dbPool = new Pool({
     user: "postgres",
     password: "1234",
-    database: "conduit",
+    database: "pos",
     hostname: "localhost",
     port: 5432,
 }, POOL_CONNECTIONS);
